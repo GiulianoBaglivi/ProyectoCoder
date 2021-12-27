@@ -35,6 +35,7 @@ Usamos GIT para el versionado.
 
 Autores ✒️
 
-Marcos Macaroni - Desarrollo / Documentación 
+Marcos Macaroni - Desarrollo / Documentación
+\
 Giuliano Baglivi - Desarrollo / Documentación
 

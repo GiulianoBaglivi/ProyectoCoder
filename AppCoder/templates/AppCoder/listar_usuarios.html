@@ -1,0 +1,43 @@
+{% extends 'AppCoder/index.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Usuarios</title>
+</head>
+<body>
+{% block 'listausuarios'  %}
+    <h1 class='titulo'> Lista usuarios </h1>
+    <form class="text-light" action={% url 'listausuarios' %} method="GET">
+        <input type="text" name='dni' placeholder="Ingrese DNI"/>
+        <input type="submit" placeholder="Buscar"/>
+    </form>
+
+    <ul class='text-light'>
+        {% if usuarios %}
+            {% for usuario in usuarios %}
+                <li>
+                    <a href={% url 'detalle_cliente' usuario.id %}> {{usuario}} </a>
+                </li>
+                <button>
+                    <a href="{% url 'eliminar_cliente' usuario.id %}">Borrar</a>
+                </button>
+                <button>
+                    <a href="{% url 'editar_cliente' %}">Editar</a>
+                </button>
+            {% endfor %}
+        {% elif error %}
+            <h4 class="text-light">{{error}}</h4>
+        {% else %}
+            <h4 class="text-light">No se encontro cliente</h4>
+        {% endif %}
+    </ul>
+    <button>
+        <a href="{% url 'crear_cliente' %}">Agregar otro usuario</a>
+    </button>
+{% endblock 'listausuarios' %}
+</body>
+</html>
+

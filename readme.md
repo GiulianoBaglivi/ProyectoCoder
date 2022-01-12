@@ -41,11 +41,11 @@ Necesitarás tener instalada la última versión de Python, pip, y Django.
 
 Construido con 🛠️
 
-asgiref==3.4.1 --> https://github.com/django/asgiref/
-Django==3.2.9 --> https://www.djangoproject.com/
-Pillow==8.4.0 --> https://pillow.readthedocs.io/en/stable/
-pytz==2021.3 --> https://pypi.org/project/pytz/
-sqlparse==0.4.2 --> https://pypi.org/project/sqlparse/
+asgiref==3.4.1 --> https://github.com/django/asgiref/  
+Django==3.2.9 --> https://www.djangoproject.com/  
+Pillow==8.4.0 --> https://pillow.readthedocs.io/en/stable/  
+pytz==2021.3 --> https://pypi.org/project/pytz/  
+sqlparse==0.4.2 --> https://pypi.org/project/sqlparse/  
 
 Versionado 📌
 
@@ -53,5 +53,5 @@ Usamos GIT para el versionado.
 
 Autores ✒️
 
-Marcos Macaroni - Desarrollo / Documentación
-Giuliano Baglivi - Desarrollo / Documentación
+Marcos Macaroni - Desarrollo / Documentación  
+Giuliano Baglivi - Desarrollo / Documentación  
